@@ -64,3 +64,5 @@ class nonBaseCourse(baseCourse):
     # Returns the list form of the prereq classes for this current course.
     def getPrereqs(self):
         return self.prereqs
+
+##END##

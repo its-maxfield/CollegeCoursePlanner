@@ -41,19 +41,4 @@ class courseConnections():
 
         return
 
-def main():
-    course1 = CIS.baseCourse("Intro to Biology", 123, "BIO", "This course is about biology", 5)
-
-    course2 = CIS.nonBaseCourse("Tester", 124, "CHEM", "Testing course", 2, course1)
-
-    print(course2.prereqs[0].type)
-    print(course2.getName())
-
-    print(course2.getCredits())
-
-    coursesSorted = courseConnections([course1, course2])
-
-    coursesSorted.coursesToMap()
-
-if __name__ == "__main__":
-    main()
+##END##
