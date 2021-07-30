@@ -1,5 +1,13 @@
 '''
-Stores all course objects in hashmap to easily assemble the tree.
+Stores all course objects based on current major in hashmap to easily assemble the tree.
+
+i.e.
+{
+    BIO123 : corresponding base or nonbase course,
+    ...,
+    ...,
+    MATH23 : base or nonbase course
+}
 '''
 
 import courseInfoStorage as CIS

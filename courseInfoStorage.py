@@ -9,12 +9,16 @@ class baseCourse():
     """
 
     def __init__(self, courseName, courseID, courseType, courseInfo, courseCredits):
+        #Strings
         self.name = courseName
-        self.id = courseID
         self.type = courseType
         self.info = courseInfo
+
+        #Int
+        self.id = courseID
         self.credits = courseCredits
 
+        #String concat with int
         self.key = self.setKey()
 
     # Set the key for the current course
@@ -48,6 +52,7 @@ class nonBaseCourse(baseCourse):
     Created 07/20/2021 by MFF
     """
 
+    #Call super and define extra var for nonBaseCourse
     def __init__(self, courseName, courseID, courseType, courseInfo, courseCredits, *args):
         self.prereqs = []
 
